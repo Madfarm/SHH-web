@@ -40,6 +40,14 @@ h1 {
   padding: 1rem;
 }
 
+.card:hover {
+  background: rgba(102, 38, 128, 0.60);
+}
+
+.card:hover .data {
+  transform: scale(1.2)
+}
+
 .card-title {
   margin: 0;
   font-size: 23px;
@@ -56,10 +64,12 @@ h1 {
 .data {
   font-size: 24px;
   color: cyan;
+
+  transition: 0.1s ease;
 }
 
 .status-container {
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 .status-label {
