@@ -12,6 +12,9 @@
         document.getElementById("co-value").textContent = data.co.value;
         document.getElementById("co-status").textContent = data.co.status;
 
+        document.getElementById("h2s-value").textContent = data.h2s.value;
+        document.getElementById("h2s-status").textContent = data.h2s.status;
+
         document.getElementById("co2-value").textContent = data.mhz.value.co2;
         document.getElementById("co2-status").textContent = data.mhz.status;
 
@@ -74,6 +77,18 @@
         <div class="status-container">
           <p class="status-label">Status</p>
           <p class="status" id="co2-status"></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h4 class="card-title">Hydrogen Sulfide</h4>
+        <div class="data-container">
+          <p class="data" id="h2s-value"></p>
+          <span class="units-text">ppm</span>
+        </div>
+        <div class="status-container">
+          <p class="status-label">Status</p>
+          <p class="status" id="h2s-status"></p>
         </div>
       </div>
 
