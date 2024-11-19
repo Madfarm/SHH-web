@@ -90,13 +90,34 @@ h1 {
 .fall-warning {
   text-align: center;
   padding: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 3vh;
   width: 40rem;
 
-  background: rgba(128, 5, 7, 0.79);
+  background: rgba(128, 5, 7, 0.58);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(128, 5, 7, 0.3);
+
+  animation: warning-flash 1s infinite;
+}
+
+#fall-status {
+  font-size: 33px;
+}
+
+@keyframes warning-flash {
+  0% {
+    background: rgba(128, 5, 7, 0.58);
+  }
+
+  50% {
+    background: rgba(128, 5, 7, 1);
+  }
+
+
+  100% {
+    background: rgba(128, 5, 7, 0.58);
+  }
 }
